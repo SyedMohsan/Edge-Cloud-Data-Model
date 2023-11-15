@@ -1,2 +1,2 @@
-# Edge-Cloud-Data-Model
- Data Model for C2JN project is here
+# Digital-Twin_Network-Data-Model
+ Data Model for C2JN Project (continue..)
