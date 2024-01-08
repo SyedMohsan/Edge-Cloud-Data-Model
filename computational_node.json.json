@@ -23,88 +23,21 @@
           "enum": [
             "Node"
           ],
-          "description": "Property. NGSI Entity type. It has to be Device"
-        },
-        "ipAddress": {
-          "type": "array",
-          "description": "Property. Model:'https://schema.org/Text'. List of IP address of the device. It can be a comma separated list of values if the device has more than one IP address",
-          "items": {
-            "type": "string",
-            "oneOf": [
-              {
-                "format": "ipv4"
-              },
-              {
-                "format": "ipv6"
-              }
-            ]
-          }
+          "description": "Property. NGSI Entity type."
         },
         "dateInstalled": {
           "type": "string",
           "format": "date-time",
-          "description": "Property. Model:'https://schema.org/DateTime'. A timestamp which denotes when the device was installed (if it requires installation)"
+          "description": "Property. Model:'https://schema.org/DateTime'.)"
         },
-        "PrometheusMetricsScraping_interval": {
+        "dateRemoved": {
           "type": "string",
           "format": "date-time",
-          "description": "Property. Model:'https://schema.org/DateTime'. A timestamp which denote the interval of scraping of the data interval"
-        },
-        "hardwareInformationScraped": {
-          "type": "string",
-          "format": "date-time",
-          "description": "Property. Model:'https://schema.org/DateTime'. A timestamp which denotes when the device capabilites scrapped"
-        },
-        "dateFirstUsed": {
-          "type": "string",
-          "format": "date-time",
-          "description": "Property. Model:'https://schema.org/DateTime'. A timestamp which denotes when the device was first used"
-        },
-        "hardwareVersion": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. The hardware version of this device"
-        },
-        "softwareVersion": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. The software version of this device"
+          "description": "Property. Model:'https://schema.org/DateTime')"
         },
         "osVersion": {
           "type": "string",
           "description": "Property. Model:'https://schema.org/Text'. The version of the host operating system device"
-        },
-        "relativePosition": {
-          "type": "string",
-          "description": "Property. Location of this device in a coordinate system according to its local emplacement"
-        },
-        "dateLastCalibration": {
-          "type": "string",
-          "format": "date-time",
-          "description": "Property. Model:'https://schema.org/DateTime'. A timestamp which denotes when the last calibration of the device happened"
-        },
-        "serialNumber": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/serialNumber'. The serial number assigned by the manufacturer"
-        },
-        "provider": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/provider'. The provider of the device"
-        },
-        "refDeviceModel": {
-          "description": "Relationship. Model of the device",
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
-        },
-        "deviceState": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. State of this device from an operational point of view. Its value can be vendor dependent"
-        },
-        "dateLastValueReported": {
-          "type": "string",
-          "format": "date-time",
-          "description": "Property. Model:'https://schema.org/DateTime'. A timestamp which denotes the last time when the device successfully reported data to the cloud"
-        },
-        "value": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/QuantitativeValue'. A observed or reported value. For actuator devices, it is an attribute that allows a controlling application to change the actuation setting. For instance, a switch device which is currently _on_ can report a value 'on' of type 'Text'. Obviously, in order to toggle the referred switch, this attribute value will have to be changed to 'off'"
         },
         "dateObserved": {
           "type": "string",
