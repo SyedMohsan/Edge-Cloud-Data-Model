@@ -2,9 +2,9 @@
   "$schema": "http://json-schema.org/schema#",
   "$schemaVersion": "0.0.8",
   "modelTags": "",
-  "$id": "https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/schema.json",
+  "$id": "https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/computational_node.json",
   "title": " Edge Cloud Continuum Data Model",
-  "description": "A Digital Twin Data Model for the hardware, software components presentation in the segments",
+  "description": "Computational Node schema is here",
   "type": "object",
   "allOf": [
     {
@@ -76,16 +76,6 @@
           "type": "string",
           "description": "Property. Location of this device in a coordinate system according to its local emplacement"
         },
-        "direction": {
-          "type": "string",
-          "enum": [
-            "Inlet",
-            "Outlet",
-            "Entry",
-            "Exit"
-          ],
-          "description": "Property. Enum:'Inlet, Outlet, Entry, Exit'.  Model:'https://schema.org/DateTime'. A timestamp which denotes when the device was installed (if it requires installation)"
-        },
         "dateLastCalibration": {
           "type": "string",
           "format": "date-time",
@@ -117,6 +107,8 @@
           "description": "Property. Model:'https://schema.org/QuantitativeValue'. A observed or reported value. For actuator devices, it is an attribute that allows a controlling application to change the actuation setting. For instance, a switch device which is currently _on_ can report a value 'on' of type 'Text'. Obviously, in order to toggle the referred switch, this attribute value will have to be changed to 'off'"
         },
         "dateObserved": {
+          "type": "string",
+          "format": "date-time",
           "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/dateObserved"
         }
       }
