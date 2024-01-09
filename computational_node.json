@@ -43,13 +43,44 @@
           "type": "string",
           "format": "date-time",
           "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/dateObserved"
+        },
+        "cpuUsage": {
+          "type": "string"
+        },
+        "cpuCore": {
+          "type": "string"
+        },
+        "cpuModel": {
+          "type": "string"
+        },
+        "vendor": {
+          "type": "string"
+        },
+        "storageCpacity": {
+          "type": "string"
+        },
+        "cpuFrequency": {
+          "type": "string"
+        },
+        "gpuFrequency": {
+          "type": "string"
+        },
+        "energyConsumption":{
+          "type": "string"
+        },
+        "carbonFootprint": {
+          "type": "string"
+        },
+        "bandwidth": {
+          "type": "string"
+        },
+        "Interfaces": {
+          "type": "string"
         }
       }
     }
   ],
   "required": [
-    "id",
-    "type",
-    "controlledProperty"
+    "id"    
   ]
 }
