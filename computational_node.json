@@ -48,7 +48,7 @@
           "type": "string"
         },
         "cpuCore": {
-          "type": "string"
+          "type": "number"
         },
         "cpuModel": {
           "type": "string"
@@ -57,22 +57,22 @@
           "type": "string"
         },
         "storageCpacity": {
-          "type": "string"
+          "type": "number"
         },
         "cpuFrequency": {
-          "type": "string"
+          "type": "number"
         },
         "gpuFrequency": {
-          "type": "string"
+          "type": "number"
         },
         "energyConsumption":{
-          "type": "string"
+          "type": "number"
         },
         "carbonFootprint": {
-          "type": "string"
+          "type": "number"
         },
         "bandwidth": {
-          "type": "string"
+          "type": "number"
         },
         "Interfaces": {
           "type": "string"
