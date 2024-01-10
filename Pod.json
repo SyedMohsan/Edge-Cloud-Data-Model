@@ -4,7 +4,7 @@
     "modelTags": "",
     "$id": "https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/computational_node.json",
     "title": " Edge Cloud Continuum Data Model",
-    "description": "Computational Node schema ",
+    "description": "Computational Node schema is here",
     "type": "object",
     "allOf": [
       {
