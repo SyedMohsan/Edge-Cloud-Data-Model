@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/SyedMohsan/Edge-Cloud-Data-Model/rack-schema.json",
+  "$id": "https://github.com/SyedMohsan/Edge-Cloud-Data-Model/Rack.json",
   "title": "Rack",
   "description": "Schema for representing a rack.",
   "type": "object",

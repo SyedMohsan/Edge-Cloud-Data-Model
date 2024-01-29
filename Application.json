@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schemaVersion": "0.0.8",
+  "$id": "https://your-organization.com/schemas/application.json",
+  "title": "Application",
+  "description": "Schema for representing an application.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    }
+  ],
+  "properties": {
+    "idApplication": {
+      "type": "string",
+      "description": "The identifier of the application."
+    },
+    "criticality": {
+      "type": "string",
+      "enum": ["low", "medium", "high"],
+      "description": "The criticality of the application, defined as 'low', 'medium', or 'high'. Criticality represents the impact of an incident on the application, with higher values indicating greater impact."
+    },
+    "accessUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "The URL for accessing the application, formatted as <protocol>://<ip_or_dns>:<port>."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["running", "maintenance", "warning", "error"],
+      "description": "The current status of the application. It can be 'running', 'maintenance', 'warning', or 'error'. 'Warning' indicates that at least one asset of the application displays an error or is unavailable, while 'error' indicates that all assets of the application are in error or unavailable."
+    },
+    "servicesList": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of services that constitute the application."
+    }
+  },
+  "required": ["idApplication"]
+}

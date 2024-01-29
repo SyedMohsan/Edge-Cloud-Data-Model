@@ -1,0 +1,57 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.8",
+    "modelTags": "",
+    "$id": "https://github.com/SyedMohsan/Edge-Cloud-Data-Model/virtual_Machine.json",
+    "title": "Virtual Machine",
+    "description": "Schema for Virtual Machine attributes",
+    "type": "object",
+    "allOf": [
+      {
+        "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+      },
+      {
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "VirtualMachine"
+            ],
+            "description": "Property. NGSI Entity type."
+          },
+          "cpu_usage": {
+            "type": "string",
+            "description": "Real-time data of CPU usage of the virtual machine"
+          },
+          "ram_usage": {
+            "type": "string",
+            "description": "Real-time data of RAM usage of the virtual machine"
+          },
+          "i/o_disk": {
+            "type": "string",
+            "description": "Real-time data of input/output operations of the file system or volumes attached to the virtual machine"
+          },
+          "bandwidth": {
+            "type": "string",
+            "description": "Amount of data transferred via the network interfaces of the virtual machines"
+          },
+          "latency": {
+            "type": "string",
+            "description": "Latency of the virtual machine"
+          },
+          "energy_consumption": {
+            "type": "string",
+            "description": "Energy consumption of the virtual machine"
+          },
+          "CO2_foot_print": {
+            "type": "string",
+            "description": "CO2 emission rate by the virtual machine"
+          }
+        }
+      }
+    ],
+    "required": [
+      "id"    
+    ]
+  }
+  
