@@ -1,10 +1,10 @@
 {
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$schemaVersion": "0.0.8",
   "modelTags": "",
-  "$id": "https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/computational_node.json",
-  "title": " Edge Cloud Continuum Data Model",
-  "description": "Computational Node schema is here",
+  "$id": "https://github.com/SyedMohsan/Edge-Cloud-Data-Model/computational_node.json",
+  "title": "Computational Node",
+  "description": "Computational Node schema describes attributes related to computational nodes.",
   "type": "object",
   "allOf": [
     {
@@ -25,62 +25,168 @@
           ],
           "description": "Property. NGSI Entity type."
         },
-        "dateInstalled": {
+        "nodeId": {
           "type": "string",
-          "format": "date-time",
-          "description": "Property. Model:'https://schema.org/DateTime'.)"
+          "description": "The identifier of the node."
         },
-        "dateRemoved": {
+        "nodeType": {
           "type": "string",
-          "format": "date-time",
-          "description": "Property. Model:'https://schema.org/DateTime')"
+          "description": "The type of node (IoT object, Switch, Server)."
         },
-        "osVersion": {
+        "bayId": {
+          "type": ["string", "null"],
+          "description": "The identifier of the bay hosting the node (in the case of a server), null in the case of an IoT object."
+        },
+        "rackNumber": {
           "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. The version of the host operating system device"
+          "description": "The rack number on which the node is plugged in a bay."
         },
-        "dateObserved": {
+        "longitude": {
+          "type": "number",
+          "description": "The current longitude where the node is located."
+        },
+        "latitude": {
+          "type": "number",
+          "description": "The current latitude where the node is located."
+        },
+        "geometryMatrix": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "description": "A 3 x 2 matrix defining the relative coordinates of a 480 mm unit representing the box of the object in a 3-dimensional space. This allows positioning and visualizing assets in space."
+        },
+        "physicalDependencies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "List of nodes with which the node has dependencies."
+        },
+        "technicalCharacteristics": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "List of technical characteristics of the node."
+        },
+        "metrologies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "List of metrics to monitor for the node."
+        },
+        "services": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "List of services located at the node level."
+        },
+        "ramCapacity": {
           "type": "string",
-          "format": "date-time",
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/dateObserved"
+          "description": "The Random Access Memory (RAM) capacity of the node."
         },
-        "cpuUsage": {
-          "type": "string"
+        "diskCapacity": {
+          "type": "string",
+          "description": "The storage capacity (hard disk) of the node."
         },
-        "cpuCore": {
-          "type": "number"
+        "networkInterfaces": {
+          "type": "number",
+          "description": "The number of network interfaces of the node."
+        },
+        "networkBandwidth": {
+          "type": "string",
+          "description": "The network bandwidth of the node."
+        },
+        "cpuCores": {
+          "type": "number",
+          "description": "The number of processor cores of the node."
         },
         "cpuModel": {
-          "type": "string"
-        },
-        "vendor": {
-          "type": "string"
-        },
-        "storageCpacity": {
-          "type": "number"
+          "type": "string",
+          "description": "The model of the node's processor."
         },
         "cpuFrequency": {
-          "type": "number"
+          "type": "number",
+          "description": "The frequency of the node's processor."
+        },
+        "gpuModel": {
+          "type": "string",
+          "description": "The model of the node's Graphics Processing Unit (GPU)."
         },
         "gpuFrequency": {
-          "type": "number"
+          "type": "number",
+          "description": "The frequency of the node's Graphics Processing Unit (GPU)."
         },
-        "energyConsumption":{
-          "type": "number"
+        "operatingSystem": {
+          "type": "string",
+          "description": "The operating system installed on the node."
         },
-        "carbonFootprint": {
-          "type": "number"
+        "powerCapacity": {
+          "type": "number",
+          "description": "The power capacity of the node."
         },
-        "bandwidth": {
-          "type": "number"
+        "intensityCapacity": {
+          "type": "number",
+          "description": "The intensity capacity of the node."
         },
-        "Interfaces": {
-          "type": "string"
+        "entryDateTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "The date and time when the asset entered the datacenter."
+        },
+        "removalDateTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "The date and time when the asset is scheduled to be removed from the datacenter."
+        },
+        "vendor": {
+          "type": "string",
+          "description": "The vendor or manufacturer of the node."
+        },
+        "cpuUsageData": {
+          "type": "string",
+          "description": "Real-time data of CPU usage of the node."
+        },
+        "ramUsageData": {
+          "type": "string",
+          "description": "Real-time data of RAM usage of the node."
+        },
+        "diskIO": {
+          "type": "string",
+          "description": "Real-time data of disk Input/Output operations of the file system or volumes attached to the nodes."
+        },
+        "networkBandwidthUsage": {
+          "type": "string",
+          "description": "The amount of data transferred via the node's network interfaces."
+        },
+        "latency": {
+          "type": "string",
+          "description": "The latency of the node."
+        },
+        "energyConsumption": {
+          "type": "string",
+          "description": "The electrical consumption of the node."
+        },
+        "batteryLevel": {
+          "type": "string",
+          "description": "The current battery level of the node."
+        },
+        "CO2Footprint": {
+          "type": "string",
+          "description": "The amount of CO2 emitted by the node."
         }
       }
     }
   ],
   "required": [
-    "id"    
+    "id"
   ]
 }

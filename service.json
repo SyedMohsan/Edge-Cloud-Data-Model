@@ -1,0 +1,50 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://github.com/SyedMohsan/Edge-Cloud-Data-Model/service.json",
+    "title": "Service Schema",
+    "description": "Schema for describing services",
+    "allOf": [
+      {
+        "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+      }
+    ],
+    "type": "object",
+    "properties": {
+      "serviceId": {
+        "type": "string",
+        "description": "The identifier of the service"
+      },
+      "serviceType": {
+        "type": "string",
+        "description": "The type of the service (VM, container, process)"
+      },
+      "hostId": {
+        "type": "string",
+        "description": "The identifier of the host machine of the service"
+      },
+      "tag": {
+        "type": "string",
+        "description": "The tagging of the service linked to the service type and its client's context"
+      },
+      "criticalityLevel": {
+        "type": "string",
+        "description": "Level of criticality linked to the service"
+      },
+      "logicalDependencies": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "List of all services on which the service depends (data, processing)"
+      },
+      "metrics": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "List of metrics to monitor according to the type of service"
+      }
+    },
+    "required": ["serviceId"]
+  }
+  

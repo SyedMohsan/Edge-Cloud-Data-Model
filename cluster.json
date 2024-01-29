@@ -1,0 +1,48 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.8",
+    "modelTags": "",
+    "$id": "https://github.com/SyedMohsan/Edge-Cloud-Data-Model/cluster.json",
+    "title": "Cluster",
+    "description": "Schema for representing a logical cluster of datacenters for a client. ",
+    "type": "object",
+    "allOf": [
+      {
+        "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+      }
+    ],
+    "properties": {
+      "Id_cluster": {
+        "type": "string",
+        "description": "The identifier of the cluster."
+      },
+      "Customer": {
+        "type": "string",
+        "description": "The client organization associated with the site."
+      },
+      "List_sites": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "List of sites within the cluster."
+      },
+      "Metrics": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "List of metrics to monitor for the site."
+      },
+      "Energy_consumption_cluster": {
+        "type": "number",
+        "description": "Real-time data of the electrical consumption of the site."
+      },
+      "CO2_emission_cluster": {
+        "type": "number",
+        "description": "Real-time data of the CO2 emission rate from the site."
+      }
+    },
+    "required": ["Id_cluster"]
+  }
+  

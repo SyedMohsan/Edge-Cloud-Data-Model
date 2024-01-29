@@ -1,0 +1,48 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/container.json",
+    "title": "Container",
+    "description": "Schema for container data",
+    "type": "object",
+    "allOf": [
+      {
+        "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+      }
+    ],
+    "properties": {
+      "type": {
+        "type": "string",
+        "enum": ["Container"],
+        "description": "Property. NGSI Entity type."
+      },
+      "container_cpu_usage": {
+        "type": "string",
+        "description": "Real-time data of the CPU usage of the container."
+      },
+      "container_ram_usage": {
+        "type": "string",
+        "description": "Real-time data of the RAM usage of the container."
+      },
+      "container_disk_io": {
+        "type": "string",
+        "description": "Real-time data of disk I/O operations of the file system or volumes attached to containers for evaluating their storage performance. Monitoring disk I/O helps identify potential storage bottlenecks or high latency."
+      },
+      "container_bandwidth": {
+        "type": "string",
+        "description": "The amount of data transferred via the network interfaces of the containers."
+      },
+      "container_latency": {
+        "type": "string",
+        "description": "The latency of the container."
+      },
+      "container_energy_consumption": {
+        "type": "string",
+        "description": "The energy consumption of the container."
+      },
+      "container_CO2_footprint": {
+        "type": "string",
+        "description": "The CO2 emission rate of the container."
+      }
+    },
+    "required": ["id"]
+  }

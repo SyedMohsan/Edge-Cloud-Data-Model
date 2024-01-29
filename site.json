@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schemaVersion": "0.0.8",
+  "modelTags": "",
+  "$id": "https://github.com/SyedMohsan/Edge-Cloud-Data-Model/site-schema.json",
+  "title": "Site",
+  "description": "Schema for Site",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    }
+  ],
+  "properties": {
+    "Id_Site": {
+      "type": "string",
+      "description": "The identifier of the Site"
+    },
+    "Customer": {
+      "type": "string",
+      "description": "The customer organization associated with the site"
+    },
+    "List_salle": {
+      "type": "string",
+      "description": "List of rooms in the site"
+    },
+    "capacity_using_power": {
+      "type": "Number",
+      "description": "The capacity of the asset in terms of power used"
+    },
+    "capacity_using_intensity": {
+      "type": "Number",
+      "description": "The capacity of the asset in terms of intensity used"
+    },
+    "Metrics": {
+      "type": "string",
+      "description": "The list of metrics to monitor for the site"
+    },
+    "Energy_consumption_site": {
+      "type": "Number",
+      "description": "Real-time data of the site's electrical consumption"
+    },
+    "Temperature_site": {
+      "type": "Number",
+      "description": "Real-time data of the site's temperature"
+    },
+    "Intensité_site": {
+      "type": "Number",
+      "description": "Real-time data of the site's electrical intensity"
+    },
+    "PUE_site": {
+      "type": "Number",
+      "description": "Data of Power Usage Effectiveness (PUE) for the site"
+    },
+    "EER_site": {
+      "type": "Number",
+      "description": "Energy Efficiency Ratio (EER) coefficient: Measures the efficiency of the cooling system by dividing the cooling capacity (in BTU) by the energy consumption (in watts). Higher EER values indicate better efficiency."
+    },
+    "CO2_emission_site": {
+      "type": "Number",
+      "description": "Real-time data of CO2 emission rate by the site"
+    }
+  },
+  "required": [
+    "Id_Site",
+    "Customer"
+  ]
+}

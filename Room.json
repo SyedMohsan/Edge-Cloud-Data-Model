@@ -1,0 +1,65 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://github.com/SyedMohsan/Edge-Cloud-Data-Model/room-schema.json",
+    "title": "Room",
+    "description": "Schema for a room",
+    "type": "object",
+    "allOf": [
+      {
+        "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+      }
+    ],
+    "properties": {
+      "Id_Salle": {
+        "type": "string",
+        "description": "The identifier of the room"
+      },
+      "Customer": {
+        "type": "string",
+        "description": "The associated customer organization of the room"
+      },
+      "Nb_racks": {
+        "type": "integer",
+        "description": "Number of available racks in the room"
+      },
+      "capacity_using_power": {
+        "type": "number",
+        "description": "Capacity of the asset in terms of used power"
+      },
+      "capacity_using_intensity": {
+        "type": "number",
+        "description": "Capacity of the asset in terms of used intensity"
+      },
+      "Metrics": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "List of metrics to monitor for the room"
+      },
+      "Energy_consumption_room": {
+        "type": "number",
+        "description": "Real-time data of the room's electrical consumption"
+      },
+      "temperature_room": {
+        "type": "number",
+        "description": "Real-time data of the room's temperature"
+      },
+      "intensit_room": {
+        "type": "number",
+        "description": "Real-time data of the room's electrical intensity"
+      },
+      "hygrometrie_room": {
+        "type": "number",
+        "description": "Humidity rate of the room"
+      },
+      "CO2_emission_room": {
+        "type": "number",
+        "description": "Real-time data of CO2 emission rate by the room"
+      }
+    },
+    "required": [
+      "Id_Salle"
+    ]
+  }
+  
