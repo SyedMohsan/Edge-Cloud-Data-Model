@@ -7,13 +7,20 @@
     "allOf": [
       {
         "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-      }
+      },
+      {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    } 
     ],
     "properties": {
       "type": {
         "type": "string",
         "enum": ["Container"],
         "description": "Property. NGSI Entity type."
+      },
+      "containerId": {
+        "type": "string",
+        "description": "The identifier of the container, normally the name of the container."
       },
       "container_cpu_usage": {
         "type": "string",
@@ -43,6 +50,14 @@
         "type": "string",
         "description": "The CO2 emission rate of the container."
       }
+      "deployedInNode": {
+        "type": "string",
+        "description": "The computational node in which the container is deployed[ref node schwema of the Edge-Cloud Continuum Data model  ]"
+      },
+      "referenceApplication": {
+        "type" : "string", 
+        "description" : "This attribute represents the reference application: whose functionality is executed in this container"
+       }
     },
     "required": ["id"]
   }

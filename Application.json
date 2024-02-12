@@ -8,6 +8,9 @@
   "allOf": [
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
     }
   ],
   "properties": {
@@ -35,7 +38,7 @@
       "items": {
         "type": "string"
       },
-      "description": "List of services that constitute the application."
+      "description": "List of services that constitute the application. [reference to the service schema of  the  Edge-Cloud Continuum data model  ]"
     }
   },
   "required": ["idApplication"]

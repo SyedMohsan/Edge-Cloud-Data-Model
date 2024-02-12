@@ -9,7 +9,10 @@
     "allOf": [
       {
         "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-      }
+      },
+      {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    }    
     ],
     "properties": {
       "Id_cluster": {
@@ -18,14 +21,14 @@
       },
       "Customer": {
         "type": "string",
-        "description": "The client organization associated with the site."
+        "description": "The client organization associated with the site[Rreferece to the customer schema of the Edge_Cloud Continuum data model]"
       },
       "List_sites": {
         "type": "array",
         "items": {
           "type": "string"
         },
-        "description": "List of sites within the cluster."
+        "description": "List of sites within the cluster [reference to the site schema]"
       },
       "Metrics": {
         "type": "array",

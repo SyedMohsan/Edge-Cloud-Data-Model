@@ -9,7 +9,10 @@
   "allOf": [
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    }
+    },
+      {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    } 
   ],
   "properties": {
     "Id_Site": {
@@ -18,46 +21,42 @@
     },
     "Customer": {
       "type": "string",
-      "description": "The customer organization associated with the site"
+      "description": "The customer organization associated with the site [rference to the customer schema of Edge-Cloud Continuum data model]"
     },
-    "List_salle": {
+    "list_Rooms": {
       "type": "string",
-      "description": "List of rooms in the site"
+      "description": "List of rooms in the site [reference to the rooms schema in the Edge-Cloud Continuum data model]"
     },
     "capacity_using_power": {
-      "type": "Number",
+      "type": "number",
       "description": "The capacity of the asset in terms of power used"
     },
     "capacity_using_intensity": {
-      "type": "Number",
+      "type": "number",
       "description": "The capacity of the asset in terms of intensity used"
     },
-    "Metrics": {
-      "type": "string",
-      "description": "The list of metrics to monitor for the site"
-    },
     "Energy_consumption_site": {
-      "type": "Number",
+      "type": "number",
       "description": "Real-time data of the site's electrical consumption"
     },
-    "Temperature_site": {
-      "type": "Number",
+    "temperature_site": {
+      "type": "number",
       "description": "Real-time data of the site's temperature"
     },
     "Intensité_site": {
-      "type": "Number",
+      "type": "number",
       "description": "Real-time data of the site's electrical intensity"
     },
-    "PUE_site": {
-      "type": "Number",
+    "power_usage_effectiveness": {
+      "type": "number",
       "description": "Data of Power Usage Effectiveness (PUE) for the site"
     },
-    "EER_site": {
-      "type": "Number",
+    "energy_efficiency_ratio": {
+      "type": "number",
       "description": "Energy Efficiency Ratio (EER) coefficient: Measures the efficiency of the cooling system by dividing the cooling capacity (in BTU) by the energy consumption (in watts). Higher EER values indicate better efficiency."
     },
-    "CO2_emission_site": {
-      "type": "Number",
+    "CO2_emission": {
+      "type": "number",
       "description": "Real-time data of CO2 emission rate by the site"
     }
   },

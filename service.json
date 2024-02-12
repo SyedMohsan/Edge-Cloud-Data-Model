@@ -6,7 +6,10 @@
     "allOf": [
       {
         "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-      }
+      },
+      {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    } 
     ],
     "type": "object",
     "properties": {
@@ -26,6 +29,10 @@
         "type": "string",
         "description": "The tagging of the service linked to the service type and its client's context"
       },
+      "protocol": {
+        "type": "string",
+        "description": "The application employed protocol"
+      },
       "criticalityLevel": {
         "type": "string",
         "description": "Level of criticality linked to the service"
@@ -37,12 +44,9 @@
         },
         "description": "List of all services on which the service depends (data, processing)"
       },
-      "metrics": {
-        "type": "array",
-        "items": {
-          "type": "string"
-        },
-        "description": "List of metrics to monitor according to the type of service"
+      "deployedRefContainers": {
+        "type": "string",
+        "description": " contianer to which a service is deployed, reference to the container model of Edge-Cloud Continumm data model"
       }
     },
     "required": ["serviceId"]

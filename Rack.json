@@ -7,7 +7,10 @@
   "allOf": [
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    }
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    } 
   ],
   "properties": {
     "Id_baie": {
@@ -40,24 +43,23 @@
       "type": "number",
       "description": "The capacity of the asset in terms of intensity used."
     },
-    "Metrics": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "description": "The list of metrics to monitor for the rack."
-    },
-    "INDEnergy_consumption_rack": {
+    "Energy_consumption_rack": {
       "type": "string",
       "description": "Real-time data of the electrical consumption in the rack."
     },
-    "INDintensity_rack": {
+    "intensity_rack": {
       "type": "string",
       "description": "Real-time data of the electrical intensity in the rack."
     },
-    "INDCO2_emission_rack": {
+    "CO2_emission_rack": {
       "type": "string",
       "description": "Real-time data of CO2 emission rate emitted by the rack."
+    },
+    "installedNode": {
+      "type": "array","items": {
+        "type": "string"
+      },
+      "description": "The computational nodes in the given rack [ref node schema of the Edge-Cloud Continuum Data model  ]"
     }
   },
   "required": [

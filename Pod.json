@@ -9,26 +9,22 @@
   "allOf": [
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    }
+    },
+      {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    } 
   ],
   "properties": {
     "Id_POD": {
       "type": "string",
       "description": "Identifier of the POD"
     },
-    "List_baie": {
+    "listRacks": {
       "type": "array",
       "items": {
         "type": "string"
       },
-      "description": "List of bays constructing the POD"
-    },
-    "List_metrics": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "description": "List of metrics to monitor for a POD"
+      "description": "List of racks constructing the POD [reference to the rack schema of Edge-Cloud Continuum Data model]"
     },
     "Energy_consumption_POD": {
       "type": "number",

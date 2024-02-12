@@ -33,6 +33,20 @@
           "type": "string",
           "description": "The type of node (IoT object, Switch, Server)."
         },
+        "deployedContainers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "reference to the idetification of the deployed container in this computational node [reference to the contianer schema in Edge-Cloud Continuum Model]"
+        },
+        "deployedPods": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "reference to the idetification of the deployed Pods in this computational node [reference to the  schema iPod Json Edge-Cloud Continuum Model]"
+        },
         "bayId": {
           "type": ["string", "null"],
           "description": "The identifier of the bay hosting the node (in the case of a server), null in the case of an IoT object."
@@ -137,7 +151,7 @@
           "type": "number",
           "description": "The intensity capacity of the node."
         },
-        "entryDateTime": {
+         "entryDateTime": {
           "type": "string",
           "format": "date-time",
           "description": "The date and time when the asset entered the datacenter."
