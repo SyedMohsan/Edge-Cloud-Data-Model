@@ -13,7 +13,7 @@
     } 
   ],
   "properties": {
-    "Id_baie": {
+    "Id_rack": {
       "type": "string",
       "description": "The identifier of the rack."
     },

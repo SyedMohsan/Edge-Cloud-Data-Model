@@ -21,7 +21,11 @@
               "VirtualMachine"
             ],
             "description": "Property. NGSI Entity type."
-          },
+          },          
+            "Id_VM": {
+              "type": "string",
+              "description": "The identification of the VM"
+            },
           "cpu_usage": {
             "type": "string",
             "description": "Real-time data of CPU usage of the virtual machine"
@@ -49,6 +53,18 @@
           "CO2_foot_print": {
             "type": "string",
             "description": "CO2 emission rate by the virtual machine"
+          },
+          "underlyingNode": {
+            "type": "string",
+            "description": "The computational node on which the VM is executing and offering a service [Reference to the schema of the of computational node here from the Edge-Cloud Data Model]"
+          },
+          "referenceCluster": {
+            "type": "string",
+            "description": "[Reference to the schema of the of Cluster here from the Edge-Cloud Data Model]"
+          },         
+          "referenceRack": {
+            "type": "string",
+            "description": "[Reference to the Rack schema here from the Edge-Cloud Data Model]"
           }
         }
       }

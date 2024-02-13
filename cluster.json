@@ -21,7 +21,7 @@
       },
       "Customer": {
         "type": "string",
-        "description": "The client organization associated with the site[Rreferece to the customer schema of the Edge_Cloud Continuum data model]"
+        "description": "The client organization associated with the site[Reference to the customer schema of the Edge_Cloud Continuum data model]"
       },
       "List_sites": {
         "type": "array",
@@ -29,13 +29,6 @@
           "type": "string"
         },
         "description": "List of sites within the cluster [reference to the site schema]"
-      },
-      "Metrics": {
-        "type": "array",
-        "items": {
-          "type": "string"
-        },
-        "description": "List of metrics to monitor for the site."
       },
       "Energy_consumption_cluster": {
         "type": "number",
