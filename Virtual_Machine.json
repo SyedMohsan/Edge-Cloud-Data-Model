@@ -54,8 +54,11 @@
             "type": "string",
             "description": "CO2 emission rate by the virtual machine"
           },
-          "underlyingNode": {
+          "underlying_computational_Node": {
             "type": "string",
+            "items": {
+              "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/computational_node.json"
+            },    
             "description": "The computational node on which the VM is executing and offering a service [Reference to the schema of the of computational node here from the Edge-Cloud Data Model]"
           },
           "referenceCluster": {

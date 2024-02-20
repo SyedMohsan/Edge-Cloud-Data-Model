@@ -23,6 +23,9 @@
       },
       "available_racks": {
         "type": "integer",
+        "items": {
+          "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/Rack.json"
+        },
         "description": "Number of available racks in the room [reference to the racks schema of Edge-Cloud Continuum data model ]"
       },
       "capacity_using_power": {

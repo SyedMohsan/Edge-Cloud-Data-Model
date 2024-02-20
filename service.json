@@ -46,7 +46,10 @@
       },
       "deployedRefContainers": {
         "type": "string",
-        "description": " contianer to which a service is deployed, reference to the container model of Edge-Cloud Continumm data model"
+        "items": {
+          "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/computational_node.json"
+        },
+        "description": "container to which a service is deployed, reference to the container model of Edge-Cloud Continuum data model"
       }
     },
     "required": ["serviceId"]

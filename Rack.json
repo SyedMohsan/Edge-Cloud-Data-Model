@@ -56,10 +56,11 @@
       "description": "Real-time data of CO2 emission rate emitted by the rack."
     },
     "installedNode": {
-      "type": "array","items": {
-        "type": "string"
+      "type": "array",
+      "items": {
+        "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/computational_node.json"
       },
-      "description": "The computational nodes in the given rack [ref node schema of the Edge-Cloud Continuum Data model  ]"
+      "description": "The computational nodes in the given rack [ref node schema of the Edge-Cloud Continuum Data model ]"
     }
   },
   "required": [

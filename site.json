@@ -25,6 +25,9 @@
     },
     "list_Rooms": {
       "type": "string",
+      "items": {
+        "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/Room.json"
+      },
       "description": "List of rooms in the site [reference to the rooms schema in the Edge-Cloud Continuum data model]"
     },
     "capacity_using_power": {

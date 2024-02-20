@@ -36,24 +36,30 @@
         "deployedContainers": {
           "type": "array",
           "items": {
-            "type": "string"
+            "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/computational_node.json"
           },
-          "description": "reference to the idetification of the deployed container in this computational node [reference to the contianer schema in Edge-Cloud Continuum Model]"
+          "description": "a reference to the identification of the deployed container in this computational node [reference to the container schema in Edge-Cloud Continuum Model]"
         },
         "deployedPods": {
           "type": "array",
           "items": {
-            "type": "string"
+            "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/Pod.json"
           },
-          "description": "reference to the idetification of the deployed Pods in this computational node [reference to the  schema iPod Json Edge-Cloud Continuum Model]"
+          "description": "a reference to the identification of the deployed Pods in this computational node [reference to the  schema Pod Json Edge-Cloud Continuum Model]"
         },
-        "bayId": {
+        "roomId": {
           "type": ["string", "null"],
-          "description": "The identifier of the bay hosting the node (in the case of a server), null in the case of an IoT object."
+          "items": {
+            "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/Room.json"
+          },
+          "description": "The identifier of the bay hosting the node (in the case of a server), null in the case if the computational node is IoT object."
         },
         "rackNumber": {
           "type": "string",
-          "description": "The rack number on which the node is plugged in a bay."
+          "items": {
+            "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/Rack.json"
+          },
+          "description": "The rack number on which the node is plugged in a rack[reference to the rack json schema]"
         },
         "longitude": {
           "type": "number",
@@ -82,24 +88,10 @@
           },
           "description": "List of nodes with which the node has dependencies."
         },
-        "technicalCharacteristics": {
+       "services": {
           "type": "array",
           "items": {
-            "type": "string"
-          },
-          "description": "List of technical characteristics of the node."
-        },
-        "metrologies": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of metrics to monitor for the node."
-        },
-        "services": {
-          "type": "array",
-          "items": {
-            "type": "string"
+            "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/service.json"
           },
           "description": "List of services located at the node level."
         },

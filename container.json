@@ -52,6 +52,9 @@
       }
       "deployedInNode": {
         "type": "string",
+        "items": {
+          "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/computational_node.json"
+        },
         "description": "The computational node in which the container is deployed[ref node schwema of the Edge-Cloud Continuum Data model  ]"
       },
       "referenceApplication": {

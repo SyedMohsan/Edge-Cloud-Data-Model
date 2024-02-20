@@ -22,9 +22,9 @@
     "listRacks": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/Rack.json"
       },
-      "description": "List of racks constructing the POD [reference to the rack schema of Edge-Cloud Continuum Data model]"
+      "description": "List of racks constituting the POD [reference to the rack schema of Edge-Cloud Continuum Data model]"
     },
     "Energy_consumption_POD": {
       "type": "number",
