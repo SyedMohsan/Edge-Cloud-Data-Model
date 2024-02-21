@@ -19,11 +19,11 @@
         "type": "string",
         "description": "The identifier of the cluster."
       },
-      "Customer": {
+      "referenceCustomer": {
         "type": "string",
         "description": "The client organization associated with the site[Reference to the customer schema of the Edge_Cloud Continuum data model]"
       },
-      "list_sites": {
+      "list_Sites": {
         "type": "array",
         "items": {
           "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/site.json"
