@@ -22,7 +22,7 @@
         "description": "The associated customer organization of the room"
       },
       "available_racks": {
-        "type": "integer",
+        "type": "array",
         "items": {
           "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/Rack.json"
         },

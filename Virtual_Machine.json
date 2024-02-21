@@ -63,10 +63,16 @@
           },
           "referenceCluster": {
             "type": "string",
+            "items": {
+              "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/cluster.json"
+            },
             "description": "[Reference to the schema of the of Cluster here from the Edge-Cloud Data Model]"
           },         
           "referenceRack": {
             "type": "string",
+            "items": {
+              "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/Rack.json"
+            },
             "description": "[Reference to the Rack schema here from the Edge-Cloud Data Model]"
           }
         }

@@ -57,8 +57,11 @@
         },
         "description": "The computational node in which the container is deployed[ref node schwema of the Edge-Cloud Continuum Data model  ]"
       },
-      "referenceApplication": {
-        "type" : "string", 
+      "referenceInstalledApplication": {
+        "type" : "string",
+        "items": {
+          "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/Application.json"
+        },
         "description" : "This attribute represents the reference application: whose functionality is executed in this container"
        }
     },

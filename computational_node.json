@@ -40,13 +40,6 @@
           },
           "description": "a reference to the identification of the deployed container in this computational node [reference to the container schema in Edge-Cloud Continuum Model]"
         },
-        "deployedPods": {
-          "type": "array",
-          "items": {
-            "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/Pod.json"
-          },
-          "description": "a reference to the identification of the deployed Pods in this computational node [reference to the  schema Pod Json Edge-Cloud Continuum Model]"
-        },
         "roomId": {
           "type": ["string", "null"],
           "items": {
@@ -84,9 +77,9 @@
         "physicalDependencies": {
           "type": "array",
           "items": {
-            "type": "string"
+            "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/computational_node.json"
           },
-          "description": "List of nodes with which the node has dependencies."
+          "description": "List of nodes with which the node has dependencies. reference to the schea of the computational itself. The instances, (technically a tuple in data charaterizing the node) can use this schema"
         },
        "services": {
           "type": "array",
@@ -175,7 +168,7 @@
         },
         "latency": {
           "type": "string",
-          "description": "The latency of the node."
+          "description": "The latency of the node. Essentially time it takes to respond the end user request"
         },
         "energyConsumption": {
           "type": "string",

@@ -36,7 +36,7 @@
     "servicesList": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/service.json"
       },
       "description": "List of services that constitute the application. [reference to the service schema of  the  Edge-Cloud Continuum data model  ]"
     }

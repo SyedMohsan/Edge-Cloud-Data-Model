@@ -23,10 +23,10 @@
         "type": "string",
         "description": "The client organization associated with the site[Reference to the customer schema of the Edge_Cloud Continuum data model]"
       },
-      "List_sites": {
+      "list_sites": {
         "type": "array",
         "items": {
-          "type": "string"
+          "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/site.json"
         },
         "description": "List of sites within the cluster [reference to the site schema]"
       },
