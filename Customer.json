@@ -18,7 +18,14 @@
     "customer-id": {
       "type": "string",
       "description": "The identifier of the customer"
-    }   
+    },
+    "subscribredServices": {
+      "type": "array",
+      "items": {
+        "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/service.json"
+      },
+      "description": "List of nodes with which the node has dependencies. reference to the schea of the computational itself. The instances, (technically a tuple in data charaterizing the node) can use this schema"
+    },   
     },
   "required": [
     "Id_Site"    
