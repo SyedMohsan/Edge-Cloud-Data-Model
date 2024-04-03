@@ -64,6 +64,6 @@
     }
   },
   "required": [
-    "Id_baie"
+    "Id_rack"
   ]
 }

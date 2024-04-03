@@ -40,6 +40,13 @@
           },
           "description": "a reference to the identification of the deployed container in this computational node [reference to the container schema in Edge-Cloud Continuum Model]"
         },
+        "deployedVMs": {
+          "type": "array",
+          "items": {
+            "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/virtual_Machine.json"
+          },
+          "description": "a reference to the identification of the deployed container in this computational node [reference to the container schema in Edge-Cloud Continuum Model]"
+        },
         "roomId": {
           "type": ["string", "null"],
           "items": {

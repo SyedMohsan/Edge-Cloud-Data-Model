@@ -4,7 +4,7 @@
   "modelTags": "",
   "$id": "https://github.com/SyedMohsan/Edge-Cloud-Data-Model/Customer.json",
   "title": "Site",
-  "description": "Schema for Site",
+  "description": "Schema for customer",
   "type": "object",
   "allOf": [
     {
@@ -24,10 +24,10 @@
       "items": {
         "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/service.json"
       },
-      "description": "List of nodes with which the node has dependencies. reference to the schea of the computational itself. The instances, (technically a tuple in data charaterizing the node) can use this schema"
-    },   
+      "description": "List of subscribed services by customer"
+    }   
     },
   "required": [
-    "Id_Site"    
+    "customer-id"    
   ]
 }
