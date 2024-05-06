@@ -1,5 +1,6 @@
 {
   "@context": {
-    "pod": "https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/pod.json"
+    "pod": "https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/pod.json",
+    "EdgeCloudContinuum": "https://vocab.egm.io/EdgeCloudContinuum"
   }
 }
