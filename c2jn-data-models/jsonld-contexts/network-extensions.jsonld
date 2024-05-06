@@ -1,3 +1,5 @@
 {
-  "@context": {}
+  "@context": {
+    "pod": "https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/pod.json"
+  }
 }
