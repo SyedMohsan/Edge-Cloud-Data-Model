@@ -1,0 +1,53 @@
+ {
+        "$schema": "http://json-schema.org/schema#",
+        "$id": "https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/Application_pod.json",
+        "title": "Application_pod",
+        "description": "Schema for Appplication_pod",
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+          },
+          {
+          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        } 
+        ],
+        "properties": {
+          "PodId": {
+            "type": "string",
+            "description": "The identifier of the pod, normally the name of the pod."
+          },
+          "CPU_utilization": {
+            "type": "number",
+            "description": "CPU by the POD"
+          },
+          "Netwrok_transmission": {
+            "type": "number",
+            "description": "RAM by the POD"
+          },
+          "Network_reception": {
+            "type": "number",
+            "description": "RAM by the POD"
+          },
+          "Ram_utilization": {
+            "type": "number",
+            "description": "RAM by the POD"
+          },
+          "energy_consumption": {
+            "type": "string",
+            "description": "The energy consumption of the POD."
+          },
+          "CO2_footprint": {
+            "type": "string",
+            "description": "The CO2 emission rate of the Pod."
+          },
+          "deployedInNode": {
+            "type": "string",
+            "items": {
+              "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/computational_node.json"
+            },
+            "description": "The computational node in which the Pod is deployed[ref node schema of the Edge-Cloud Continuum Data model  ]"
+          }
+        },
+        "required": ["PodId"]
+      }
