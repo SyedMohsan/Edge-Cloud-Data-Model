@@ -26,7 +26,7 @@
       },
       "description": "List of racks constituting the POD [reference to the rack schema of Edge-Cloud Continuum Data model]"
     },
-    "Energy_consumption_POD": {
+    "energy_consumption_POD": {
       "type": "number",
       "description": "Real-time data of POD's electrical consumption"
     },

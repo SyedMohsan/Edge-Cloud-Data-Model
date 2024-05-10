@@ -19,7 +19,7 @@
       "type": "string",
       "description": "The identifier of the Site"
     },
-    "Customer": {
+    "customer": {
       "type": "string",
       "description": "The customer organization associated with the site [rference to the customer schema of Edge-Cloud Continuum data model]"
     },
@@ -38,7 +38,7 @@
       "type": "number",
       "description": "The capacity of the asset in terms of intensity used"
     },
-    "Energy_consumption_site": {
+    "energy_consumption_site": {
       "type": "number",
       "description": "Real-time data of the site's electrical consumption"
     },
@@ -46,7 +46,7 @@
       "type": "number",
       "description": "Real-time data of the site's temperature"
     },
-    "Intensité_site": {
+    "intensité_site": {
       "type": "number",
       "description": "Real-time data of the site's electrical intensity"
     },

@@ -49,7 +49,7 @@
       "container_CO2_footprint": {
         "type": "string",
         "description": "The CO2 emission rate of the container."
-      }
+      },
       "deployedInNode": {
         "type": "string",
         "items": {

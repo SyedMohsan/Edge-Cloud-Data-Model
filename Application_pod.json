@@ -21,15 +21,15 @@
             "type": "number",
             "description": "CPU by the POD"
           },
-          "Netwrok_transmission": {
+          "netwrok_transmission": {
             "type": "number",
             "description": "RAM by the POD"
           },
-          "Network_reception": {
+          "network_reception": {
             "type": "number",
             "description": "RAM by the POD"
           },
-          "Ram_utilization": {
+          "ram_utilization": {
             "type": "number",
             "description": "RAM by the POD"
           },
@@ -41,6 +41,11 @@
             "type": "string",
             "description": "The CO2 emission rate of the Pod."
           },
+          "disk_IO": {
+            "type": "string",
+            "description": "Disk read write of the Pod."
+          },
+
           "deployedInNode": {
             "type": "string",
             "items": {

@@ -43,7 +43,7 @@
       "type": "number",
       "description": "The capacity of the asset in terms of intensity used."
     },
-    "Energy_consumption_rack": {
+    "energy_consumption_rack": {
       "type": "string",
       "description": "Real-time data of the electrical consumption in the rack."
     },
@@ -55,7 +55,7 @@
       "type": "string",
       "description": "Real-time data of CO2 emission rate emitted by the rack."
     },
-    "installedNode": {
+    "InstalledNode": {
       "type": "array",
       "items": {
         "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/computational_node.json"

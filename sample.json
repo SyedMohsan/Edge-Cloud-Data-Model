@@ -45,7 +45,7 @@
             "format": "date-time",
             "description": "Property. Model:'https://schema.org/DateTime'. A timestamp which denotes when the device was installed (if it requires installation)"
           },
-          "PrometheusMetricsScraping_interval": {
+          "prometheusMetricsScraping_interval": {
             "type": "string",
             "format": "date-time",
             "description": "Property. Model:'https://schema.org/DateTime'. A timestamp which denote the interval of scraping of the data interval"
