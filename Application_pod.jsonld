@@ -1,0 +1,29 @@
+{
+    "id": "urn:ngsi-ld:ApplicationPod:istio-ingressgateway-9c8b9b586-thl7x",
+    "type": "ApplicationPod",
+    "PodId": "istio-ingressgateway-9c8b9b586-thl7x",
+    "CPU_utilization": {
+      "type": "Property",
+      "value": 0.06907686666721323
+    },
+    "network_transmission": {
+      "type": "Property",
+      "value": 196.1
+    },
+    "network_reception": {
+      "type": "Property",
+      "value": 177.46666666666667
+    },
+    "ram_utilization": {
+      "type": "Property",
+      "value": 92.703125
+    },
+    "disk_IO": {
+      "type": "Property",
+      "value": "0"
+    },
+    "deployedInNode": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:Node:cube04"
+    }
+  } 
