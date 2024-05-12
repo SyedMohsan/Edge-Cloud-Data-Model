@@ -23,7 +23,7 @@
       "value": "0"
     },
     "deployedInNode": {
-      "type": "Property",
+      "type": "Relationship",
       "value": "urn:ngsi-ld:Node:cube04"
     }
   } 
