@@ -1,6 +1,15 @@
 {
   "@context": {
-    "pod": "https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/pod.json",
-    "EdgeCloudContinuum": "https://vocab.egm.io/EdgeCloudContinuum"
+    "ApplicationPod": "https://vocab.egm.io/ApplicationPod",
+    "Application": "https://vocab.egm.io/Application",
+    "Cluster": "https://vocab.egm.io/Cluster",
+    "ComputationalNode": "https://vocab.egm.io/ComputationalNode",
+    "Container": "https://vocab.egm.io/Container",
+    "Rack": "https://vocab.egm.io/Rack",
+    "Room": "https://vocab.egm.io/Room",
+    "Site": "https://vocab.egm.io/Site",
+    "Service": "https://vocab.egm.io/Service",
+    "Customer": "https://vocab.egm.io/Customer",
+    "Container": "https://vocab.egm.io/Container"
   }
 }
