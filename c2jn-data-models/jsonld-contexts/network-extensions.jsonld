@@ -9,7 +9,6 @@
     "Room": "https://vocab.egm.io/Room",
     "Site": "https://vocab.egm.io/Site",
     "Service": "https://vocab.egm.io/Service",
-    "Customer": "https://vocab.egm.io/Customer",
-    "Container": "https://vocab.egm.io/Container"
+    "Customer": "https://vocab.egm.io/Customer"
   }
 }
