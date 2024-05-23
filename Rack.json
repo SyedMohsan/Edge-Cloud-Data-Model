@@ -10,7 +10,7 @@
     },
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    } 
+    }
   ],
   "properties": {
     "Id_rack": {
@@ -58,12 +58,10 @@
     "InstalledNode": {
       "type": "array",
       "items": {
-        "$ref":"https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/computational_node.json"
+        "$ref": "https://github.com/SyedMohsan/Edge-Cloud-Data-Model/blob/main/computational_node.json"
       },
       "description": "The computational nodes in the given rack [ref node schema of the Edge-Cloud Continuum Data model ]"
     }
   },
-  "required": [
-    "Id_rack"
-  ]
+  "required": ["Id_rack"]
 }
