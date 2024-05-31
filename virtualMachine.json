@@ -24,7 +24,7 @@
           },          
             "Id_VM": {
               "type": "string",
-              "description": "The identification of the VM, the name of the  VM and ID"
+              "description": "The identification of the VM, the name of the  VM and ID of the VM"
             },
           "cpu_usage": {
             "type": "string",
